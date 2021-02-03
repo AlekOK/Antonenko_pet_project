@@ -1,0 +1,22 @@
+<app-header></app-header>
+<app-navigation></app-navigation>
+
+
+<form class="container" [formGroup]="loginForm" (ngSubmit)="login()">
+  <label for="login"><b>Login</b></label>
+  <input  placeholder="Enter login" name="login" formControlName="log">
+  
+  <div class="errors" *ngIf="loginForm.get('log').hasError('required') && loginForm.get('log').touched">
+   Oops, please type your login!
+  </div>
+
+  <label for="psw"><b>Password</b></label>
+  <input type="password" placeholder="Enter Password" name="password" formControlName ="psw">
+
+  <div *ngIf="loginForm.get('psw').hasError('required') && loginForm.get('psw').touched">
+    <p class="errors">Oops, please type your password!</p> 
+   </div>
+
+  <button class="button" type="submit" [disabled]="loginForm.invalid">Login</button>
+
+</form>

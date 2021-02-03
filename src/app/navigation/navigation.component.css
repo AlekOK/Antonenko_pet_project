@@ -1,0 +1,57 @@
+.navblock {
+    margin-top: 3px;
+    font-size: 24px;
+    display: grid;
+    grid-template-areas: "ico greet nav";
+    grid-template-rows:  48px;
+    grid-template-columns: 15% 35% 1fr;
+    align-items: center;
+}
+
+.icon {
+    grid-area: ico;
+    height: 48px;
+    margin-top: 8px;
+    border-radius: 75%;
+}
+
+.navigation {
+    text-align-last: right;
+    grid-area: nav;
+}
+
+nav a {
+    color: black;
+    background-color: rgb(226, 78, 135);
+    margin:8px;
+    border-radius: 75%;
+}
+
+.greeting {
+    color: rgb(185, 36, 106);
+    grid-area: greet;
+    margin-top: 24px;
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+    background-color: rgb(255, 255, 255);
+    border-radius: 75%;
+    text-align: center; 
+    
+}
+
+@media all and (max-width: 575px) {
+    .navblock { 
+        grid-template-areas: "nav";
+        grid-template-rows: 1fr;  
+        grid-template-columns: 1fr;
+   }
+   .greeting {
+        visibility: hidden;
+   }
+    .icon {
+        visibility: hidden;
+   }
+}
+
+
+
+

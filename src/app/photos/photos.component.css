@@ -1,0 +1,31 @@
+.collection {
+    padding-top: 80px;
+    
+}
+.collection img {
+    width: 380px;
+}
+
+input {
+    margin: 40px;
+    height: 20px;
+    border: solid 3px;
+}
+
+.header {
+    margin-top: 40px;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px rgb(192, 37, 37), 0 0 1em rgb(0, 132, 255);
+}
+
+body {
+    background-image: url(../../assets/images/target.png);
+}
+
+.btn {
+    background-color: chartreuse;
+}
+
+.footer {
+    height: 100vh;
+}

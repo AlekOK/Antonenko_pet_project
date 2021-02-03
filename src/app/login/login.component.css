@@ -1,0 +1,41 @@
+input {
+    width: 100%;
+    padding: 16px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid rgb(51, 50, 50);
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: #11da17;
+    color: rgb(255, 255, 255);
+    padding: 16px 0px;
+    margin: 8px 0px;
+    cursor: pointer;
+    width: 100%;
+    font-size: large;
+    
+}
+
+button:hover {
+    color: gold;
+}
+
+.container {
+    padding: 16px;
+    border: 3px solid #880567;
+    margin-top: 100px;
+}
+
+button:disabled {
+    background-color: rgb(100, 197, 104);
+    color: white;
+    opacity: 0.7;
+}
+
+.errors {
+    background-color: red;
+    color: white;
+    padding: 8px;
+}

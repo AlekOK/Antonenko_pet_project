@@ -1,0 +1,13 @@
+<app-header></app-header>
+<app-navigation></app-navigation>
+
+<div class="collection">
+    <div class="header">Find your collection of ten photos. Choose your topic!</div>
+    <input type="text" [(ngModel)]="data.userName">
+    <button class="btn" (click)="data.searchCollection()">SEARCH</button>
+
+    <div *ngIf="data.response">
+        <p *ngFor="let el of data.response.results"><img src={{el.cover_photo.urls.small}}></p>
+    </div>
+</div>
+<div class="footer"></div>
