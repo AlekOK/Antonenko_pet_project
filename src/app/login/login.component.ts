@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
             this.photo_auth.auth = true;
             this.router.navigate(['/photos'])
             localStorage.setItem('auth_token', resp.token);
-          }, (error) => {alert("Authorisation required !")}
+          }, (error) => {alert("Login or password is wrong !")}
         );
     }
 

@@ -8,7 +8,7 @@ import { Observable } from "rxjs";
 })
 export class PhotoAuthGuardService implements CanActivate{
   
-  auth: boolean = true;
+  auth: boolean = false;
   
     constructor(private router: Router) { }
     
