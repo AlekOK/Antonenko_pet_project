@@ -1,13 +1,14 @@
 .string1 {
     background-color: black;
     height: 1rem;
+  width: 7px;
 }
 
 .string2 {
     background-color: rgb(218, 20, 142);
     height: 0.5rem;
 }
-    
+
 .string4 {
     background-color: rgb(243, 19, 232);
     height: 0.5rem;
